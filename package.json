@@ -1,0 +1,22 @@
+{
+    "name": "inalamabria-dev-mocks",
+    "version": "1.0.0",
+    "description": "proyecto para realizar pruebas para desarrollos",
+    "main": "app.js",
+    "scripts": {
+        "start": "node ./src/app.js",
+        "dev": "nodemon ./src/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "leonardo gonzález",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "morgan": "^1.9.0",
+        "pug": "^2.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
+}
