@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive admin dashboard and web application ui kit. ">
+    <meta name="keywords" content="blank, starter">
+
+    <title>SMX - Reporte Campaña</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="../assets/css/core.min.css" rel="stylesheet">
+    <link href="../assets/css/app.min.css" rel="stylesheet">
+    <link href="../assets/css/style.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/inalambria-favicon.png">
+    <link rel="icon" href="../assets/img/inalambria-favicon.png">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-dots">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-expand-sm sidebar-light">
+        <header class="sidebar-header cust-shadow-aside-header">
+            <a class="logo-icon" href="../index.html"><img src="../assets/img/inalambria-favicon.png" alt="logo icon"></a>
+            <span class="logo">
+          <a href="../index.html"><img src="../assets/img/logo-inalambria-blue.png" alt="logo"></a>
+        </span>
+            <span class="sidebar-toggle-fold"></span>
+        </header>
+
+        <nav class="sidebar-navigation">
+            <ul class="menu">
+
+                <li class="menu-category">REPORTE</li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="../download/download-report.html">
+                        <span class="icon fa fa-arrow-circle-o-down"></span>
+                        <span class="title">DESCARGA</span>
+                    </a>
+                </li>
+
+                <li class="menu-item active">
+                    <a class="menu-link" href="line-chart.html">
+                        <span class="icon fa fa-bar-chart-o"></span>
+                        <span class="title">HISTÓRICO</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="topbar-left" width=50%>
+            <h3 class="topbar-title cust-margin-h3">Reporte Campaña Jenn Prueba</h3>
+        </div>
+        <div class="topbar-left">
+            <button class="topbar-btn sidebar-toggler">☰</button>
+        </div>
+
+    </header>
+    <!-- END Topbar -->
+
+
+    <!-- Main container -->
+    <main class="main-container">
+        <div class="main-content">
+            <div class="card">
+
+                <div class="card-title">
+                    <div class="btn-group">
+                        <button id="btnDrop" class="btn btn-light dropdown-toggle cust-btn-width" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="icon ti-stats-up"></i>Selecciona el periodo
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: top, left; top: 36px; left: 144px;">
+                            <a class="dropdown-item" href="#" onclick="myFunction('Hoy')">Hoy</a>
+                            <a class="dropdown-item" href="#" onclick="myFunction('Esta semana')">Esta Semana</a>
+                            <a class="dropdown-item" href="#" onclick="myFunction('Este Mes')">Este Mes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <canvas id="chart-line-4" width="400" height="150"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!--/.main-content -->
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center text-md-left">SMX - Copyright © <a href="http://thetheme.io/theadmin">Inalambria Internacional. </a> Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.inalambria.com/">Página principal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+
+    </main>
+    <!-- END Main container -->
+
+    <!-- Scripts -->
+    <script src="../assets/js/core.min.js" data-provide="chartjs"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+
+    <script>
+        function myFunction(option) {
+            var mainbtn = document.getElementById("btnDrop");
+            mainbtn.innerText = option;
+        }
+
+        app.ready(function() {
+            // ==============================================
+            // Line chart 4
+            //
+            new Chart($("#chart-line-4"), {
+                type: 'line',
+
+                // Data
+                //
+                data: {
+                    labels: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+                    datasets: [{
+                        label: "Recibidos",
+                        fill: false,
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        borderColor: "#15C377",
+                        backgroundColor: "#15C377",
+                        pointBackgroundColor: "#15C377",
+                        pointBorderColor: "#15C377",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "#15C377",
+                        data: [30, 12, 20, 31, 28, 25, 18]
+                    }, {
+                        label: "Enviados",
+                        fill: false,
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        borderColor: "#48B0F7",
+                        backgroundColor: "#48B0F7",
+                        pointBackgroundColor: "#48B0F7",
+                        pointBorderColor: "#48B0F7",
+                        pointHoverBackgroundolor: "#fff",
+                        pointHoverBorderColor: "#48B0F7",
+                        data: [22, 35, 38, 13, 27, 40, 24]
+                    }, {
+                        label: "Abiertos",
+                        fill: false,
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        borderColor: "#FCC525",
+                        backgroundColor: "#FCC525",
+                        pointBackgroundColor: "#FCC525",
+                        pointBorderColor: "#FCC525",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "#FCC525",
+                        data: [23, 29, 30, 33, 20, 10, 16]
+                    }]
+                },
+
+                // Options
+                //
+                options: {}
+            });
+        });
+    </script>
+</body>
+
+</html>

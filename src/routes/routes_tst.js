@@ -12,6 +12,7 @@ router.get('/report', (req, res) => {
         }
         //res.render('report', { title: `Campaña ${campaign.name}` })
 
+    res.sendFile(path.join(__dirname, '../public/report', 'index.html'))
 })
 
 

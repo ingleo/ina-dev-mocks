@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive admin dashboard and web application ui kit. ">
+    <meta name="keywords" content="blank, starter">
+
+    <title>SMX - Reporte Campaña</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="../assets/css/core.min.css" rel="stylesheet">
+    <link href="../assets/css/app.min.css" rel="stylesheet">
+    <link href="../assets/css/style.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/inalambria-favicon.png">
+    <link rel="icon" href="../assets/img/inalambria-favicon.png">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-dots">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-expand-sm sidebar-light">
+        <header class="sidebar-header cust-shadow-aside-header">
+            <a class="logo-icon" href="../index.html"><img src="../assets/img/inalambria-favicon.png" alt="logo icon"></a>
+            <span class="logo">
+          <a href="../index.html"><img src="../assets/img/logo-inalambria-blue.png" alt="logo"></a>
+        </span>
+            <span class="sidebar-toggle-fold"></span>
+        </header>
+
+        <nav class="sidebar-navigation">
+            <ul class="menu">
+
+                <li class="menu-category">REPORTE</li>
+
+                <li class="menu-item active">
+                    <a class="menu-link" href="download-report.html">
+                        <span class="icon fa fa-arrow-circle-o-down"></span>
+                        <span class="title">DESCARGA</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="../historical/line-chart.html">
+                        <span class="icon fa fa-bar-chart-o"></span>
+                        <span class="title">HISTÓRICO</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="topbar-left" width=50%>
+            <h3 class="topbar-title cust-margin-h3">Reporte Campaña Jenn Prueba</h3>
+        </div>
+        <div class="topbar-left">
+            <button class="topbar-btn sidebar-toggler">☰</button>
+        </div>
+
+    </header>
+    <!-- END Topbar -->
+
+
+    <!-- Main container -->
+    <main class="main-container">
+        <div class="main-content">
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Hoy</h4>
+                        </div>
+
+                        <div class="card-body card-body">
+                            <div class="text-center py-20">
+                                <div data-provide="peity" data-type="pie" data-size="100" data-inner-radius="30" data-fill="#15C377,#48B0F7,#FCC525">46,50,12</div>
+                            </div>
+
+                            <ul class="flexbox flex-justified text-center mt-30">
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-green-color">46</div>
+                                    <small>Recibidos</small>
+                                </li>
+
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-blue-color">50</div>
+                                    <small>Enviados</small>
+                                </li>
+
+                                <li>
+                                    <div class="fs-20 cust-yellow-color">12</div>
+                                    <small>Abiertos</small>
+                                </li>
+                            </ul>
+
+                            <hr class="cust-hr-margin">
+                            <ul class="list-inline">
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Enviados/Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Esta semana</h4>
+                        </div>
+
+                        <div class="card-body card-body">
+                            <div class="text-center py-20">
+                                <div data-provide="peity" data-type="pie" data-size="100" data-inner-radius="30" data-fill="#15C377,#48B0F7,#FCC525">157,162,33</div>
+                            </div>
+
+                            <ul class="flexbox flex-justified text-center mt-30">
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-green-color">157</div>
+                                    <small>Recibidos</small>
+                                </li>
+
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-blue-color">162</div>
+                                    <small>Enviados</small>
+                                </li>
+
+                                <li>
+                                    <div class="fs-20 cust-yellow-color">33</div>
+                                    <small>Abiertos</small>
+                                </li>
+                            </ul>
+
+                            <hr class="cust-hr-margin">
+                            <ul class="list-inline">
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Enviados/Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Este mes</h4>
+                        </div>
+
+                        <div class="card-body card-body">
+                            <div class="text-center py-20">
+                                <div data-provide="peity" data-type="pie" data-size="100" data-inner-radius="30" data-fill="#15C377,#48B0F7,#FCC525">953,813,369</div>
+                            </div>
+
+                            <ul class="flexbox flex-justified text-center mt-30">
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-green-color">953</div>
+                                    <small>Recibidos</small>
+                                </li>
+
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-blue-color">813</div>
+                                    <small>Enviados</small>
+                                </li>
+
+                                <li>
+                                    <div class="fs-20 cust-yellow-color">69</div>
+                                    <small>Abiertos</small>
+                                </li>
+                            </ul>
+
+                            <hr class="cust-hr-margin">
+                            <ul class="list-inline">
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Enviados/Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Desde el inicio</h4>
+                        </div>
+
+                        <div class="card-body card-body">
+                            <div class="text-center py-20">
+                                <div data-provide="peity" data-type="pie" data-size="100" data-inner-radius="30" data-fill="#15C377,#48B0F7,#FCC525">1476,1500,129</div>
+                            </div>
+
+                            <ul class="flexbox flex-justified text-center mt-30">
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-green-color">1476</div>
+                                    <small>Recibidos</small>
+                                </li>
+
+                                <li class="br-1 botder-light">
+                                    <div class="fs-20 cust-blue-color">1500</div>
+                                    <small>Enviados</small>
+                                </li>
+
+                                <li>
+                                    <div class="fs-20 cust-yellow-color">129</div>
+                                    <small>Abiertos</small>
+                                </li>
+                            </ul>
+                            <hr class="cust-hr-margin">
+                            <ul class="list-inline">
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Enviados/Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span>Descargar Recibidos</span>
+                                    </div>
+                                </li>
+
+                                <li class="flexbox mb-1">
+                                    <div>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">CSV</a></strong></span>
+                                        <span class="cust-span-margin-right"></span>
+                                        <span class="badge badge-dot badge-lg mr-1" style="background-color: #46be8a"></span>
+                                        <span><strong><a href="">XLSX</a></strong></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/.main-content -->
+
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center text-md-left">SMX - Copyright © <a href="http://thetheme.io/theadmin">Inalambria Internacional. </a> Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.inalambria.com/">Página principal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+
+    </main>
+    <!-- END Main container -->
+
+    <!-- Scripts -->
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+
+</body>
+
+</html>
