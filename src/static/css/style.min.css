@@ -1,3 +1,1 @@
-.cust-p-color {
-    color: orange;
-}
+.sidebar-toggle-fold::before{border:1px solid #093561!important;background-color:#093561}.sidebar-header{background-color:#fff}.cust-shadow-aside-header{-webkit-box-shadow:4px 0 15px rgba(0,0,0,.1);box-shadow:4px 0 15px rgba(0,0,0,.1)}.menu-category{font-size:.8875rem;color:#036!important;font-weight:700}.sidebar.sidebar-light .menu:not(.menu-bordery)>.menu-item.active:hover>.menu-link,.sidebar.sidebar-light .menu:not(.menu-bordery)>.menu-item.active>.menu-link{background-color:#dcdcdc}.cust-icon-link{color:#036}.menu-link{font-weight:500;color:#036!important}.cust-margin-h3{margin-left:15px}.cust-hr-margin{margin:1rem auto}.cust-span-margin-right{margin-right:20px}.cust-btn-width{width:250px}.cust-green-color{color:#15c377}.cust-blue-color{color:#48b0f7}.cust-yellow-color{color:#fcc525}
