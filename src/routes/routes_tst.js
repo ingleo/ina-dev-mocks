@@ -8,11 +8,11 @@ const app = express()
 router.get('/report', (req, res) => {
 
     let campaign = {
-            name: 'Empresa'
-        }
-        //res.render('report', { title: `Campaña ${campaign.name}` })
+        name: 'Empresa'
+    }
+    res.render('report', { title: `Campaña ${campaign.name}` })
 
-    res.sendFile(path.join(__dirname, '../public/report', 'index.html'))
+    //res.sendFile(path.join(__dirname, '../public/report', 'index.html'))
 })
 
 
