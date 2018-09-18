@@ -8,9 +8,9 @@ const app = express()
 router.get('/report', (req, res) => {
 
     let campaign = {
-        name: 'Empresa'
+        name: 'jenn pruebas'
     }
-    res.render('report', { title: `Campaña ${campaign.name}` })
+    res.render('report/report', { title: `Campaña ${campaign.name}` })
 
     //res.sendFile(path.join(__dirname, '../public/report', 'index.html'))
 })

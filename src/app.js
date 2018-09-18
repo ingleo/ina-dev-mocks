@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 
 app.use(morgan('dev'));
 
+app.use(express.static('src/static'))
 app.set('view engine', 'pug')
 app.set('views', './src/views')
 
