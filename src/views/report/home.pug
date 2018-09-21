@@ -16,9 +16,10 @@ block content
                 .text-center.py-20
                   div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 46,50,12
                 ul.flexbox.flex-justified.text-center.mt-30
-                  li.br-1.botder-light
-                    .fs-20.cust-green-color 46
-                    small Recibidos
+                  if isCall
+                    li.br-1.botder-light
+                      .fs-20.cust-green-color 46
+                      small Recibidos
                   li.br-1.botder-light
                     .fs-20.cust-blue-color 50
                     small Enviados
@@ -27,20 +28,22 @@ block content
                     small Abiertos
                 hr.cust-hr-margin
                 ul.list-inline
-                  li.flexbox.mb-1
+                  if isCall
                     div
-                      span Descargar Enviados/Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
+                      li.flexbox.mb-1
+                        div
+                          span Descargar Enviados/Recibidos
+                      li.flexbox.mb-1
+                        div
+                          span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                          span
+                            strong
+                              a.cust-a-color(href='') CSV
+                          span.cust-span-margin-right
+                          span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                          span
+                            strong
+                              a.cust-a-color(href='') XLSX
                   li.flexbox.mb-1
                     div
                       span Descargar Recibidos
