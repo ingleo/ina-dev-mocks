@@ -1,0 +1,74 @@
+.cust-shadow-aside-header {
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cust-icon-link {
+  color: #003366;
+}
+
+.cust-margin-h3 {
+  margin-left: 15px;
+}
+
+.cust-hr-margin {
+  margin: 1rem auto;
+}
+
+.cust-span-margin-right {
+  margin-right: 20px;
+}
+
+.cust-btn-width {
+  width: 250px;
+}
+
+.cust-green-color {
+  color: #15C377;
+}
+
+.cust-blue-color {
+  color: #48B0F7;
+}
+
+.cust-yellow-color {
+  color: #FCC525;
+}
+
+.cust-img-width {
+  max-width: 80% !important;
+}
+
+.cust-color-title {
+  color: #093561 !important;
+  font-weight: 400;
+}
+
+.cust-content-top-padding {
+  padding-top: 0px !important;
+}
+
+.cust-a-color {
+  color: #65C78B;
+}
+
+.cust-font-family {
+  font-family: 'Alegreya Sans SC';
+  font-size: 5em;
+}
+
+.cust-donut-container {
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.cust-badge-background {
+  background-color: #46be8a;
+}
+
+.cust-area-container {
+  margin: 5%;
+  margin-top: 0%;
+}
+
+/*# sourceMappingURL=style.css.map */

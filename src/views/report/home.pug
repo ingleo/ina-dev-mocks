@@ -1,13 +1,12 @@
-extends layout.pug
-
+extends layout
 block content
     main.main-container
       .main-content.cust-content-top-padding
         div(align='center')
-          h1.cust-color-title
-            strong Reporte Campaña jenn prueba
+          h1.cust-color-title.cust-font-family
+            strong Reporte Campaña Jenn Prueba
         .divider  
-        .row
+        .row.cust-donut-container
           .col-md-4.col-lg-3
             .card
               .card-header
@@ -16,45 +15,45 @@ block content
                 .text-center.py-20
                   div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 46,50,12
                 ul.flexbox.flex-justified.text-center.mt-30
-                  if isCall
-                    li.br-1.botder-light
-                      .fs-20.cust-green-color 46
-                      small Recibidos
+                  li.br-1.botder-light
+                    .fs-20.cust-green-color 46
+                    .fs-20.cust-green-color 53%
+                    small Recibidos
                   li.br-1.botder-light
                     .fs-20.cust-blue-color 50
+                    .fs-20.cust-blue-color 44%
                     small Enviados
                   li
                     .fs-20.cust-yellow-color 12
+                    .fs-20.cust-yellow-color 27%
                     small Abiertos
                 hr.cust-hr-margin
                 ul.list-inline
-                  if isCall
+                  li.flexbox.mb-1
                     div
-                      li.flexbox.mb-1
-                        div
-                          span Descargar Enviados/Recibidos
-                      li.flexbox.mb-1
-                        div
-                          span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
-                          span
-                            strong
-                              a.cust-a-color(href='') CSV
-                          span.cust-span-margin-right
-                          span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
-                          span
-                            strong
-                              a.cust-a-color(href='') XLSX
+                      span Descargar Enviados/Recibidos
+                  li.flexbox.mb-1
+                    div
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
+                      span
+                        strong
+                          a.cust-a-color(href='') CSV
+                      span.cust-span-margin-right
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
+                      span
+                        strong
+                          a.cust-a-color(href='') XLSX
                   li.flexbox.mb-1
                     div
                       span Descargar Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -82,12 +81,12 @@ block content
                       span Descargar Enviados/Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -96,12 +95,12 @@ block content
                       span Descargar Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -129,12 +128,12 @@ block content
                       span Descargar Enviados/Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -143,12 +142,12 @@ block content
                       span Descargar Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -176,12 +175,12 @@ block content
                       span Descargar Enviados/Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
@@ -190,16 +189,16 @@ block content
                       span Descargar Recibidos
                   li.flexbox.mb-1
                     div
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') CSV
                       span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1(style='background-color: #46be8a')
+                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
                       span
                         strong
                           a.cust-a-color(href='') XLSX
-        .card
+        .card.cust-area-container
           .card-title
             .btn-group
               button#btnDrop.btn.btn-light.dropdown-toggle.cust-btn-width(type='button', data-toggle='dropdown', aria-expanded='false')
@@ -210,7 +209,8 @@ block content
                 a.dropdown-item(href='#', onclick="myFunction('Esta semana')") Esta Semana
                 a.dropdown-item(href='#', onclick="myFunction('Este Mes')") Este Mes
           .card-body
-            canvas#chart-line-4(width='400', height='150')
+            .card-body
+              canvas#chart-area-2(width='400', height='130')
       // /.main-content
       // Footer
       footer.site-footer
@@ -218,7 +218,7 @@ block content
           .col-md-6
             p.text-center.text-md-left
               | SMX - Copyright © 
-              a(href='http://thetheme.io/theadmin') Inalambria Internacional. 
+              a(href='https://www.inalambria.com/') Inalambria Internacional. 
               |  Todos los derechos reservados.
           .col-md-6
             ul.nav.nav-primary.nav-dotted.nav-dot-separated.justify-content-center.justify-content-md-end
@@ -236,51 +236,30 @@ block content
         mainbtn.innerText = option;
         }
         app.ready(function() {
-        // ==============================================
-        // Line chart 4
-        //
-        new Chart($("#chart-line-4"), {
+        new Chart($("#chart-area-2"), {
         type: 'line',
         // Data
         //
         data: {
-        labels: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-        label: "Recibidos",
-        fill: false,
-        borderWidth: 3,
-        pointRadius: 4,
-        borderColor: "#15C377",
-        backgroundColor: "#15C377",
-        pointBackgroundColor: "#15C377",
-        pointBorderColor: "#15C377",
+        label: "Income",
+        backgroundColor: "rgba(51,202,185,0.5)",
+        borderColor: "rgba(0,0,0,0)",
+        pointBackgroundColor: "rgba(51,202,185,0.5)",
+        pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "#15C377",
-        data: [30, 12, 20, 31, 28, 25, 18]
+        pointHoverBorderColor: "rgba(51,202,185,0.5)",
+        data: [0, 59, 80, 58, 20, 55, 40]
         }, {
-        label: "Enviados",
-        fill: false,
-        borderWidth: 3,
-        pointRadius: 4,
-        borderColor: "#48B0F7",
-        backgroundColor: "#48B0F7",
-        pointBackgroundColor: "#48B0F7",
-        pointBorderColor: "#48B0F7",
-        pointHoverBackgroundolor: "#fff",
-        pointHoverBorderColor: "#48B0F7",
-        data: [22, 35, 38, 13, 27, 40, 24]
-        }, {
-        label: "Abiertos",
-        fill: false,
-        borderWidth: 3,
-        pointRadius: 4,
-        borderColor: "#FCC525",
-        backgroundColor: "#FCC525",
-        pointBackgroundColor: "#FCC525",
-        pointBorderColor: "#FCC525",
+        label: "Expenses",
+        backgroundColor: "rgba(243,245,246,0.8)",
+        borderColor: "rgba(0,0,0,0)",
+        pointBackgroundColor: "rgba(243,245,246,0.8)",
+        pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "#FCC525",
-        data: [23, 29, 30, 33, 20, 10, 16]
+        pointHoverBorderColor: "rgba(243,245,246,0.8)",
+        data: [28, 48, 40, 19, 86, 27, 90]
         }]
         },
         // Options
