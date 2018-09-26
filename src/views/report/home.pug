@@ -1,269 +1,452 @@
 extends layout
 block content
-    main.main-container
-      .main-content.cust-content-top-padding
-        div(align='center')
-          h1.cust-color-title.cust-font-family
-            strong Reporte Campaña Jenn Prueba
-        .divider  
-        .row.cust-donut-container
-          .col-md-4.col-lg-3
-            .card
-              .card-header
-                h4.card-title Hoy
-              .card-body.card-body
-                .text-center.py-20
-                  div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 46,50,12
-                ul.flexbox.flex-justified.text-center.mt-30
-                  li.br-1.botder-light
-                    .fs-20.cust-green-color 46
-                    .fs-20.cust-green-color 53%
-                    small Recibidos
-                  li.br-1.botder-light
-                    .fs-20.cust-blue-color 50
-                    .fs-20.cust-blue-color 44%
-                    small Enviados
-                  li
-                    .fs-20.cust-yellow-color 12
-                    .fs-20.cust-yellow-color 27%
-                    small Abiertos
-                hr.cust-hr-margin
-                ul.list-inline
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Enviados/Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-          .col-md-4.col-lg-3
-            .card
-              .card-header
-                h4.card-title Esta semana
-              .card-body.card-body
-                .text-center.py-20
-                  div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 157,162,33
-                ul.flexbox.flex-justified.text-center.mt-30
-                  li.br-1.botder-light
-                    .fs-20.cust-green-color 157
-                    small Recibidos
-                  li.br-1.botder-light
-                    .fs-20.cust-blue-color 162
-                    small Enviados
-                  li
-                    .fs-20.cust-yellow-color 33
-                    small Abiertos
-                hr.cust-hr-margin
-                ul.list-inline
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Enviados/Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-          .col-md-4.col-lg-3
-            .card
-              .card-header
-                h4.card-title Este mes
-              .card-body.card-body
-                .text-center.py-20
-                  div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 953,813,369
-                ul.flexbox.flex-justified.text-center.mt-30
-                  li.br-1.botder-light
-                    .fs-20.cust-green-color 953
-                    small Recibidos
-                  li.br-1.botder-light
-                    .fs-20.cust-blue-color 813
-                    small Enviados
-                  li
-                    .fs-20.cust-yellow-color 69
-                    small Abiertos
-                hr.cust-hr-margin
-                ul.list-inline
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Enviados/Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-          .col-md-4.col-lg-3
-            .card
-              .card-header
-                h4.card-title Desde el inicio
-              .card-body.card-body
-                .text-center.py-20
-                  div(data-provide='peity', data-type='pie', data-size='100', data-inner-radius='30', data-fill='#15C377,#48B0F7,#FCC525') 1476,1500,129
-                ul.flexbox.flex-justified.text-center.mt-30
-                  li.br-1.botder-light
-                    .fs-20.cust-green-color 1476
-                    small Recibidos
-                  li.br-1.botder-light
-                    .fs-20.cust-blue-color 1500
-                    small Enviados
-                  li
-                    .fs-20.cust-yellow-color 129
-                    small Abiertos
-                hr.cust-hr-margin
-                ul.list-inline
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Enviados/Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-                  li.flexbox.mb-1
-                    div
-                      span Descargar Recibidos
-                  li.flexbox.mb-1
-                    div
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') CSV
-                      span.cust-span-margin-right
-                      span.badge.badge-dot.badge-lg.mr-1.cust-badge-background
-                      span
-                        strong
-                          a.cust-a-color(href='') XLSX
-        .card.cust-area-container
-          .card-title
-            .btn-group
-              button#btnDrop.btn.btn-light.dropdown-toggle.cust-btn-width(type='button', data-toggle='dropdown', aria-expanded='false')
-                i.icon.ti-stats-up
-                | Selecciona el periodo
-              .dropdown-menu.dropdown-menu-right(x-placement='bottom-end', style='position: absolute; will-change: top, left; top: 36px; left: 144px;')
-                a.dropdown-item(href='#', onclick="myFunction('Hoy')") Hoy
-                a.dropdown-item(href='#', onclick="myFunction('Esta semana')") Esta Semana
-                a.dropdown-item(href='#', onclick="myFunction('Este Mes')") Este Mes
-          .card-body
+  // Main container
+  main.main-container
+    .main-content.cust-content-top-padding
+      div(align='center')
+        h1.cust-color-title.cust-font-family
+          strong Reporte Campaña Jenn Prueba
+      .divider  
+      .row.cust-donut-container
+        // Today messages card
+        .col-md-4.col-lg-3
+          .card
+            .card-header
+              h4.card-title Hoy
             .card-body
-              canvas#chart-area-2(width='400', height='130')
-      // /.main-content
-      // Footer
-      footer.site-footer
-        .row
-          .col-md-6
-            p.text-center.text-md-left
-              | SMX - Copyright © 
-              a(href='https://www.inalambria.com/') Inalambria Internacional. 
-              |  Todos los derechos reservados.
-          .col-md-6
-            ul.nav.nav-primary.nav-dotted.nav-dot-separated.justify-content-center.justify-content-md-end
-              li.nav-item
-                a.nav-link(href='https://www.inalambria.com/') Página principal
-      // END Footer
-      // END Main container
-      // Scripts
-      script(src='js/core.min.js', data-provide='chartjs')
-      script(src='js/app.min.js')
-      script(src='js/script.min.js')
-      script.
-        function myFunction(option) {
-        var mainbtn = document.getElementById("btnDrop");
-        mainbtn.innerText = option;
-        }
-        app.ready(function() {
-        new Chart($("#chart-area-2"), {
-        type: 'line',
-        // Data
-        //
-        data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-        label: "Income",
-        backgroundColor: "rgba(51,202,185,0.5)",
-        borderColor: "rgba(0,0,0,0)",
-        pointBackgroundColor: "rgba(51,202,185,0.5)",
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "rgba(51,202,185,0.5)",
-        data: [0, 59, 80, 58, 20, 55, 40]
-        }, {
-        label: "Expenses",
-        backgroundColor: "rgba(243,245,246,0.8)",
-        borderColor: "rgba(0,0,0,0)",
-        pointBackgroundColor: "rgba(243,245,246,0.8)",
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "rgba(243,245,246,0.8)",
-        data: [28, 48, 40, 19, 86, 27, 90]
-        }]
-        },
-        // Options
-        //
-        options: {}
-        });
-        });
+              canvas#chart-vbar-today(width='400', height='250')
+              ul.flexbox.flex-justified.text-center.mt-30.cust-margin-chart
+                li.br-1.botder-light
+                  .fs-20.cust-green-color 1000
+                li.br-1.botder-light
+                  .fs-20.cust-blue-color 800
+                li
+                  .fs-20.cust-yellow-color 150
+              hr.cust-hr-margin
+              ul.list-inline
+                li.flexbox.mb-1
+                  div
+                    span Descargar Recibidos/Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+                li.flexbox.mb-1
+                  div
+                    span Descargar Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+        // Weekly messages card
+        .col-md-4.col-lg-3
+          .card
+            .card-header
+              h4.card-title Esta semana
+            .card-body
+              canvas#chart-vbar-weekly(width='400', height='250')
+              ul.flexbox.flex-justified.text-center.mt-30.cust-margin-chart
+                li.br-1.botder-light
+                  .fs-20.cust-green-color 1001
+                li.br-1.botder-light
+                  .fs-20.cust-blue-color 801
+                li
+                  .fs-20.cust-yellow-color 151
+              hr.cust-hr-margin
+              ul.list-inline
+                li.flexbox.mb-1
+                  div
+                    span Descargar Recibidos/Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+                li.flexbox.mb-1
+                  div
+                    span Descargar Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+        // Monthly messages card
+        .col-md-4.col-lg-3
+          .card
+            .card-header
+              h4.card-title Este mes
+            .card-body.card-body
+              canvas#chart-vbar-monthly(width='400', height='250')
+              ul.flexbox.flex-justified.text-center.mt-30.cust-margin-chart
+                li.br-1.botder-light
+                  .fs-20.cust-green-color 1002
+                li.br-1.botder-light
+                  .fs-20.cust-blue-color 802
+                li
+                  .fs-20.cust-yellow-color 152
+              hr.cust-hr-margin
+              ul.list-inline
+                li.flexbox.mb-1
+                  div
+                    span Descargar Recibidos/Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+                li.flexbox.mb-1
+                  div
+                    span Descargar Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+        // Total messages card
+        .col-md-4.col-lg-3
+          .card
+            .card-header
+              h4.card-title Desde el inicio
+            .card-body.card-body
+              canvas#chart-vbar-total(width='400', height='250')
+              ul.flexbox.flex-justified.text-center.mt-30.cust-margin-chart
+                li.br-1.botder-light
+                  .fs-20.cust-green-color 1003
+                li.br-1.botder-light
+                  .fs-20.cust-blue-color 803
+                li
+                  .fs-20.cust-yellow-color 153
+              hr.cust-hr-margin
+              ul.list-inline
+                li.flexbox.mb-1
+                  div
+                    span Descargar Recibidos/Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+                li.flexbox.mb-1
+                  div
+                    span Descargar Enviados
+                li.flexbox.mb-1
+                  div
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') CSV
+                    span.cust-span-margin-right
+                    span.badge.badge-dot.badge-gray.cust-badge-margin
+                    span
+                      strong
+                        a.cust-a-color(href='') XLSX
+      // Area chart container
+      .card.cust-area-container
+        .card-title
+          .btn-group
+            button#btnDrop.btn.btn-light.dropdown-toggle.cust-btn-width(type='button', data-toggle='dropdown', aria-expanded='false')
+              i.icon.ti-stats-up
+              | Selecciona el periodo
+            .dropdown-menu.dropdown-menu-right.cust-dropdown-position(x-placement='bottom-end')
+              a.dropdown-item(href='#', onclick="changeTimePeriod('Hoy')") Hoy
+              a.dropdown-item(href='#', onclick="changeTimePeriod('Esta semana')") Esta Semana
+              a.dropdown-item(href='#', onclick="changeTimePeriod('Este Mes')") Este Mes
+        .card-body
+          .card-body
+            canvas#chart-area-2(width='400', height='130')
+    // /.main-content
+    // Footer
+    footer.site-footer
+      .row
+        .col-md-6
+          p.text-center.text-md-left
+            | SMX - Copyright © 
+            a(href='https://www.inalambria.com/') Inalambria Internacional. 
+            |  Todos los derechos reservados.
+        .col-md-6
+          ul.nav.nav-primary.nav-dotted.nav-dot-separated.justify-content-center.justify-content-md-end
+            li.nav-item
+              a.nav-link(href='https://www.inalambria.com/') Página principal
+    // END Footer
+    // END Main container
+    // Scripts
+    script(src='js/core.min.js', data-provide='chartjs')
+    script(src='js/app.min.js')
+    script(src='js/script.min.js')
+    script.
+      function changeTimePeriod(option) {
+      var mainbtn = document.getElementById("btnDrop");
+      mainbtn.innerText = option;
+      }
+      app.ready(function() {
+      //Chart for today messages
+      new Chart($("#chart-vbar-today"), {
+      type: 'bar',
+      // Data
+      data: {
+      labels: ["Recibidos", "Enviados", "Abiertos"],
+      datasets: [{
+      backgroundColor: ['rgba(21,195,119,0.8)',
+      'rgba(72,176,247,0.8)',
+      'rgba(252,197,37,0.8)'
+      ],
+      hoverBackgroundColor: ['rgba(21,195,119)',
+      'rgba(72,176,247)',
+      'rgba(252,197,37)'
+      ],
+      borderColor: "rgba(0,0,0,0)",
+      hoverBorderColor: "rgba(0,0,0,0)",
+      data: [1000, 800, 150]
+      }]
+      },
+      // Options
+      options: {
+      title: {
+      text: 'Mensajes',
+      display: true,
+      fontSize: 13
+      },
+      scales: {
+      xAxes: [{
+      barThickness: 50
+      }],
+      yAxes: [{
+      type: "logarithmic",
+      ticks: {
+      min: 10,
+      max: 1000,
+      display: false
+      },
+      scaleLabel: {
+      display: false,
+      labelString: 'Y Axis'
+      }
+      }]
+      },
+      legend: {
+      display: false
+      }
+      }
+      });
+      //Chart for weekly messages
+      new Chart($("#chart-vbar-weekly"), {
+      type: 'bar',
+      // Data
+      data: {
+      labels: ["Recibidos", "Enviados", "Abiertos"],
+      datasets: [{
+      backgroundColor: ['rgba(21,195,119,0.8)',
+      'rgba(72,176,247,0.8)',
+      'rgba(252,197,37,0.8)'
+      ],
+      hoverBackgroundColor: ['rgba(21,195,119)',
+      'rgba(72,176,247)',
+      'rgba(252,197,37)'
+      ],
+      borderColor: "rgba(0,0,0,0)",
+      hoverBorderColor: "rgba(0,0,0,0)",
+      data: [1000, 800, 150]
+      }]
+      },
+      // Options
+      options: {
+      title: {
+      text: 'Mensajes',
+      display: true,
+      fontSize: 13
+      },
+      scales: {
+      xAxes: [{
+      barThickness: 50
+      }],
+      yAxes: [{
+      type: "logarithmic",
+      ticks: {
+      min: 10,
+      max: 1000,
+      display: false
+      },
+      scaleLabel: {
+      display: false,
+      labelString: 'Y Axis'
+      }
+      }]
+      },
+      legend: {
+      display: false
+      }
+      }
+      });
+      //Chart for monthly messages
+      new Chart($("#chart-vbar-monthly"), {
+      type: 'bar',
+      // Data
+      data: {
+      labels: ["Recibidos", "Enviados", "Abiertos"],
+      datasets: [{
+      backgroundColor: ['rgba(21,195,119,0.8)',
+      'rgba(72,176,247,0.8)',
+      'rgba(252,197,37,0.8)'
+      ],
+      hoverBackgroundColor: ['rgba(21,195,119)',
+      'rgba(72,176,247)',
+      'rgba(252,197,37)'
+      ],
+      borderColor: "rgba(0,0,0,0)",
+      hoverBorderColor: "rgba(0,0,0,0)",
+      data: [1000, 800, 150]
+      }]
+      },
+      // Options
+      options: {
+      title: {
+      text: 'Mensajes',
+      display: true,
+      fontSize: 13
+      },
+      scales: {
+      xAxes: [{
+      barThickness: 50
+      }],
+      yAxes: [{
+      type: "logarithmic",
+      ticks: {
+      min: 10,
+      max: 1000,
+      display: false
+      },
+      scaleLabel: {
+      display: false,
+      labelString: 'Y Axis'
+      }
+      }]
+      },
+      legend: {
+      display: false
+      }
+      }
+      });
+      //Chart for total messages
+      new Chart($("#chart-vbar-total"), {
+      type: 'bar',
+      // Data
+      data: {
+      labels: ["Recibidos", "Enviados", "Abiertos"],
+      datasets: [{
+      backgroundColor: ['rgba(21,195,119,0.8)',
+      'rgba(72,176,247,0.8)',
+      'rgba(252,197,37,0.8)'
+      ],
+      hoverBackgroundColor: ['rgba(21,195,119)',
+      'rgba(72,176,247)',
+      'rgba(252,197,37)'
+      ],
+      borderColor: "rgba(0,0,0,0)",
+      hoverBorderColor: "rgba(0,0,0,0)",
+      data: [1000, 800, 150]
+      }]
+      },
+      // Options
+      options: {
+      title: {
+      text: 'Mensajes',
+      display: true,
+      fontSize: 13
+      },
+      scales: {
+      xAxes: [{
+      barThickness: 50
+      }],
+      yAxes: [{
+      type: "logarithmic",
+      ticks: {
+      min: 10,
+      max: 1000,
+      display: false
+      },
+      scaleLabel: {
+      display: false,
+      labelString: 'Y Axis'
+      }
+      }]
+      },
+      legend: {
+      display: false
+      }
+      }
+      });
+      new Chart($("#chart-area-2"), {
+      type: 'line',
+      // Data
+      //
+      data: {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [{
+      label: "Income",
+      backgroundColor: "rgba(51,202,185,0.5)",
+      borderColor: "rgba(0,0,0,0)",
+      pointBackgroundColor: "rgba(51,202,185,0.5)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(51,202,185,0.5)",
+      data: [0, 59, 80, 58, 20, 55, 40]
+      }, {
+      label: "Expenses",
+      backgroundColor: "rgba(243,245,246,0.8)",
+      borderColor: "rgba(0,0,0,0)",
+      pointBackgroundColor: "rgba(243,245,246,0.8)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(243,245,246,0.8)",
+      data: [28, 48, 40, 19, 86, 27, 90]
+      }]
+      },
+      // Options
+      //
+      options: {}
+      });
+      });
